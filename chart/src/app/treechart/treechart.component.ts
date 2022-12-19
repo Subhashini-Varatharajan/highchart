@@ -22,6 +22,9 @@ constructor(public ser:DataserviceService){}
      },    
    
      colors:['#0076E1','#EA5F82','#FFA384','#00AAA5','#8C7444'],
+     credits:{
+      enabled:false
+     },
      series : [{
         type: "treemap",
         layoutAlgorithm: 'squarified',

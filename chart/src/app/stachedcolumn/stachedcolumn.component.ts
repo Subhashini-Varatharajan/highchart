@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as HighCharts from 'highcharts'
 import { DataserviceService } from '../dataservice.service';
 @Component({
@@ -6,8 +6,21 @@ import { DataserviceService } from '../dataservice.service';
   templateUrl: './stachedcolumn.component.html',
   styleUrls: ['./stachedcolumn.component.css']
 })
-export class StachedcolumnComponent {
-  constructor(public ser:DataserviceService){}
+export class StachedcolumnComponent implements OnInit {
+  arr:any;
+  value:any;
+
+
+  constructor(public ser:DataserviceService){
+    this.arr = this.ser.stackeddata;
+    this.value= this.arr.sort()
+   
+  }
+  ngOnInit(): void {
+    
+  }
+
+  
   highcharts= HighCharts;
   chartOptions: any = {
     chart: {
@@ -37,18 +50,20 @@ export class StachedcolumnComponent {
         },
       },
     },
-    legend: {
-      align: 'left',
-      x: 70,
-      verticalAlign: 'top',
-      y: 70,
-      floating: true,
+    // legend: {
+    //   align: 'left',
+    //   x: 70,
+    //   verticalAlign: 'bottom',
+    //   y: 70,
+    //   floating: true,
      
-    },
+    // },
+   
     tooltip: {
       headerFormat: '<b>{point.x}</b><br/>',
       pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}',
     },
+
     plotOptions: {
       column: {
         stacking: 'normal',
@@ -56,11 +71,21 @@ export class StachedcolumnComponent {
           enabled: false,
         },
       },
+      series:{
+        dataSorting:{
+          enabled:true
+        }
+      }
     },
+    credits:{
+      enabled:false
+     },
     colors:['#0076E1','#EA5F82','#FFA384'],
-    series: this.ser.stackeddata
+    series: this.ser.stackeddata,
+   
   }
 }
+
 
 
 

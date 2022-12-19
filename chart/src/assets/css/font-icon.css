@@ -1,0 +1,649 @@
+@font-face {
+  font-family: 'next-gen-cs-icons';
+  src:  url('../fonts/next-gen-cs-icons.eot?8y1bjo');
+  src:  url('../fonts/next-gen-cs-icons.eot?8y1bjo#iefix') format('embedded-opentype'),
+    url('../fonts/next-gen-cs-icons.ttf?8y1bjo') format('truetype'),
+    url('../fonts/next-gen-cs-icons.woff?8y1bjo') format('woff'),
+    url('../fonts/next-gen-cs-icons.svg?8y1bjo#next-gen-cs-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ng-cs-"], [class*=" ng-cs-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'next-gen-cs-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ng-cs-perspetive:before {
+  content: "\e998";
+  color: #0076e1;
+}
+.ng-cs-plain-tick:before {
+  content: "\e964";
+  color: #0076e1;
+}
+.ng-cs-ratio-ticked:before {
+  content: "\e997";
+  color: #0076e1;
+}
+.ng-cs-access:before {
+  content: "\e900";
+  color: #0076e1;
+}
+.ng-cs-account:before {
+  content: "\e901";
+  color: #0076e1;
+}
+.ng-cs-add-calendar:before {
+  content: "\e902";
+  color: #1d85e5;
+}
+.ng-cs-add-plus:before {
+  content: "\e903";
+  color: #0076e1;
+}
+.ng-cs-anomaly_day:before {
+  content: "\e904";
+  color: #0076e1;
+}
+.ng-cs-anomaly-account:before {
+  content: "\e905";
+  color: #0076e1;
+}
+.ng-cs-area-graph:before {
+  content: "\e906";
+  color: #0076e1;
+}
+.ng-cs-arrow-down:before {
+  content: "\e907";
+  color: #0076e1;
+}
+.ng-cs-arrow-horizontal:before {
+  content: "\e908";
+  color: #0076e1;
+}
+.ng-cs-arrow-left:before {
+  content: "\e909";
+  color: #0076e1;
+}
+.ng-cs-arrow-right:before {
+  content: "\e90a";
+  color: #0076e1;
+}
+.ng-cs-arrow-up:before {
+  content: "\e90b";
+  color: #0076e1;
+}
+.ng-cs-aws:before {
+  content: "\e90c";
+  color: #0076e1;
+}
+.ng-cs-azure:before {
+  content: "\e90d";
+  color: #0076e1;
+}
+.ng-cs-bar-graph:before {
+  content: "\e90e";
+  color: #0076e1;
+}
+.ng-cs-bookmark:before {
+  content: "\e90f";
+  color: #0076e1;
+}
+.ng-cs-budget_savings:before {
+  content: "\e910";
+  color: #0076e1;
+}
+.ng-cs-calendar-default:before {
+  content: "\e911";
+  color: #0076e1;
+}
+.ng-cs-card-thumb-view:before {
+  content: "\e912";
+  color: #0076e1;
+}
+.ng-cs-check-box-default:before {
+  content: "\e913";
+  color: #0076e1;
+}
+.ng-cs-check-box-selected:before {
+  content: "\e914";
+  color: #0076e1;
+}
+.ng-cs-check-list-settings:before {
+  content: "\e915";
+  color: #0076e1;
+}
+.ng-cs-cil_sort-alpha-down:before {
+  content: "\e916";
+  color: #0076e1;
+}
+.ng-cs-cirlce-down-arrow:before {
+  content: "\e917";
+  color: #0076e1;
+}
+.ng-cs-cirlce-left-arrow:before {
+  content: "\e918";
+  color: #0076e1;
+}
+.ng-cs-cirlce-right-arrow:before {
+  content: "\e919";
+  color: #0076e1;
+}
+.ng-cs-cirlce-up-arrow:before {
+  content: "\e91a";
+  color: #0076e1;
+}
+.ng-cs-claas-lab:before {
+  content: "\e91b";
+  color: #0076e1;
+}
+.ng-cs-claas-lti:before {
+  content: "\e91c";
+  color: #0076e1;
+}
+.ng-cs-claas-student-report:before {
+  content: "\e91d";
+  color: #0076e1;
+}
+.ng-cs-claas-student:before {
+  content: "\e91e";
+  color: #0076e1;
+}
+.ng-cs-close-fill:before {
+  content: "\e91f";
+  color: #0076e1;
+}
+.ng-cs-close-thick:before {
+  content: "\e920";
+  color: #0076e1;
+}
+.ng-cs-close:before {
+  content: "\e921";
+  color: #0076e1;
+}
+.ng-cs-cloud-account:before {
+  content: "\e922";
+  color: #0076e1;
+}
+.ng-cs-cloud-download:before {
+  content: "\e923";
+  color: #0076e1;
+}
+.ng-cs-cloud-upload:before {
+  content: "\e924";
+  color: #0076e1;
+}
+.ng-cs-cloud:before {
+  content: "\e925";
+  color: #0076e1;
+}
+.ng-cs-collapse-two-arrow:before {
+  content: "\e926";
+  color: #0076e1;
+}
+.ng-cs-collapse:before {
+  content: "\e927";
+  color: #0076e1;
+}
+.ng-cs-column-filter:before {
+  content: "\e928";
+  color: #0076e1;
+}
+.ng-cs-compliance:before {
+  content: "\e929";
+  color: #0076e1;
+}
+.ng-cs-configured:before {
+  content: "\e92a";
+  color: #0076e1;
+}
+.ng-cs-cost:before {
+  content: "\e92b";
+  color: #0076e1;
+}
+.ng-cs-Dashboard:before {
+  content: "\e92c";
+  color: #0076e1;
+}
+.ng-cs-delete:before {
+  content: "\e92d";
+  color: #0076e1;
+}
+.ng-cs-down-arrow:before {
+  content: "\e92e";
+  color: #0076e1;
+}
+.ng-cs-download:before {
+  content: "\e92f";
+  color: #0076e1;
+}
+.ng-cs-edit-pencil:before {
+  content: "\e930";
+  color: #0076e1;
+}
+.ng-cs-edit:before {
+  content: "\e931";
+  color: #0076e1;
+}
+.ng-cs-expand-two-arrow:before {
+  content: "\e932";
+  color: #0076e1;
+}
+.ng-cs-expand:before {
+  content: "\e933";
+  color: #0076e1;
+}
+.ng-cs-external-link:before {
+  content: "\e934";
+  color: #0076e1;
+}
+.ng-cs-filter:before {
+  content: "\e935";
+  color: #0076e1;
+}
+.ng-cs-gcp:before {
+  content: "\e936";
+  color: #0076e1;
+}
+.ng-cs-general-report:before {
+  content: "\e937";
+  color: #0076e1;
+}
+.ng-cs-globe-outline:before {
+  content: "\e938";
+  color: #0076e1;
+}
+.ng-cs-governance:before {
+  content: "\e939";
+  color: #0076e1;
+}
+.ng-cs-help_icon:before {
+  content: "\e93a";
+  color: #0076e1;
+}
+.ng-cs-hierarchy:before {
+  content: "\e93b";
+  color: #0076e1;
+}
+.ng-cs-home:before {
+  content: "\e93c";
+  color: #0076e1;
+}
+.ng-cs-horizontal-arrow:before {
+  content: "\e93d";
+  color: #0076e1;
+}
+.ng-cs-info-style2:before {
+  content: "\e93e";
+  color: #0076e1;
+}
+.ng-cs-left-arrow:before {
+  content: "\e93f";
+  color: #0076e1;
+}
+.ng-cs-line-graph:before {
+  content: "\e940";
+  color: #0076e1;
+}
+.ng-cs-logout:before {
+  content: "\e941";
+  color: #0076e1;
+}
+.ng-cs-mark_default:before {
+  content: "\e942";
+  color: #0076e1;
+}
+.ng-cs-message-active .path1:before {
+  content: "\e943";
+  color: rgb(0, 118, 225);
+}
+.ng-cs-message-active .path2:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(0, 118, 225);
+}
+.ng-cs-message-active .path3:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(0, 118, 225);
+}
+.ng-cs-message-active .path4:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(255, 0, 0);
+}
+.ng-cs-message:before {
+  content: "\e947";
+  color: #0076e1;
+}
+.ng-cs-money_piggy-1:before {
+  content: "\e948";
+  color: #0076e1;
+}
+.ng-cs-money_piggy-2:before {
+  content: "\e949";
+  color: #0076e1;
+}
+.ng-cs-money_piggy-3:before {
+  content: "\e94a";
+  color: #0076e1;
+}
+.ng-cs-money_piggy:before {
+  content: "\e94b";
+  color: #0076e1;
+}
+.ng-cs-month-calender:before {
+  content: "\e94c";
+  color: #0076e1;
+}
+.ng-cs-more-apps:before {
+  content: "\e94d";
+  color: #0076e1;
+}
+.ng-cs-multi-cloud-report:before {
+  content: "\e94e";
+  color: #0076e1;
+}
+.ng-cs-network:before {
+  content: "\e94f";
+  color: #0076e1;
+}
+.ng-cs-not-configured:before {
+  content: "\e950";
+  color: #0076e1;
+}
+.ng-cs-notification-active .path1:before {
+  content: "\e951";
+  color: rgb(0, 118, 225);
+}
+.ng-cs-notification-active .path2:before {
+  content: "\e952";
+  margin-left: -1em;
+  color: rgb(0, 118, 225);
+}
+.ng-cs-notification-active .path3:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(255, 0, 0);
+}
+.ng-cs-notification:before {
+  content: "\e954";
+  color: #0076e1;
+}
+.ng-cs-oci:before {
+  content: "\e955";
+  color: #0076e1;
+}
+.ng-cs-operations:before {
+  content: "\e956";
+  color: #0076e1;
+}
+.ng-cs-pinned:before {
+  content: "\e957";
+  color: #0076e1;
+}
+.ng-cs-potential-savings:before {
+  content: "\e958";
+  color: #0076e1;
+}
+.ng-cs-private:before {
+  content: "\e959";
+  color: #0076e1;
+}
+.ng-cs-profile-default:before {
+  content: "\e95a";
+  color: #0076e1;
+}
+.ng-cs-profile-info .path1:before {
+  content: "\e95b";
+  color: rgb(29, 133, 229);
+}
+.ng-cs-profile-info .path2:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(29, 133, 229);
+}
+.ng-cs-profile-info .path3:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(29, 133, 229);
+}
+.ng-cs-profile-info .path4:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(29, 133, 229);
+}
+.ng-cs-profile-info .path5:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(0, 118, 225);
+}
+.ng-cs-profile-settings:before {
+  content: "\e960";
+  color: #0076e1;
+}
+.ng-cs-ratio-box-checked:before {
+  content: "\e961";
+  color: #0076e1;
+}
+.ng-cs-ratio-box-default:before {
+  content: "\e962";
+  color: #0076e1;
+}
+.ng-cs-ratio-tick-default:before {
+  content: "\e963";
+  color: #0076e1;
+}
+.ng-cs-read-only:before {
+  content: "\e965";
+  color: #0076e1;
+}
+.ng-cs-read-write:before {
+  content: "\e966";
+  color: #0076e1;
+}
+.ng-cs-realized-savings:before {
+  content: "\e967";
+  color: #0076e1;
+}
+.ng-cs-recommendations-1:before {
+  content: "\e968";
+  color: #0076e1;
+}
+.ng-cs-recommendations:before {
+  content: "\e969";
+  color: #0076e1;
+}
+.ng-cs-region:before {
+  content: "\e96a";
+  color: #0076e1;
+}
+.ng-cs-reload:before {
+  content: "\e96b";
+  color: #0076e1;
+}
+.ng-cs-reports:before {
+  content: "\e96c";
+  color: #0076e1;
+}
+.ng-cs-resource:before {
+  content: "\e96d";
+  color: #0076e1;
+}
+.ng-cs-resources-1:before {
+  content: "\e96e";
+  color: #0076e1;
+}
+.ng-cs-resources:before {
+  content: "\e96f";
+  color: #0076e1;
+}
+.ng-cs-right-arrow:before {
+  content: "\e970";
+  color: #0076e1;
+}
+.ng-cs-saveas:before {
+  content: "\e971";
+  color: #0076e1;
+}
+.ng-cs-savings:before {
+  content: "\e972";
+  color: #0076e1;
+}
+.ng-cs-schedule:before {
+  content: "\e973";
+  color: #0076e1;
+}
+.ng-cs-search:before {
+  content: "\e974";
+  color: #0076e1;
+}
+.ng-cs-security:before {
+  content: "\e975";
+  color: #0076e1;
+}
+.ng-cs-self-service:before {
+  content: "\e976";
+  color: #0076e1;
+}
+.ng-cs-settings:before {
+  content: "\e977";
+  color: #0076e1;
+}
+.ng-cs-sort-alpha-down:before {
+  content: "\e978";
+  color: #0076e1;
+}
+.ng-cs-sort-alpha-up:before {
+  content: "\e979";
+  color: #0076e1;
+}
+.ng-cs-sort-down:before {
+  content: "\e97a";
+  color: #0076e1;
+}
+.ng-cs-sort-up:before {
+  content: "\e97b";
+  color: #0076e1;
+}
+.ng-cs-success:before {
+  content: "\e97c";
+  color: #0076e1;
+}
+.ng-cs-sync:before {
+  content: "\e97d";
+  color: #0076e1;
+}
+.ng-cs-system:before {
+  content: "\e97e";
+  color: #0076e1;
+}
+.ng-cs-table-view:before {
+  content: "\e97f";
+  color: #0076e1;
+}
+.ng-cs-tag_chat:before {
+  content: "\e980";
+  color: #0076e1;
+}
+.ng-cs-tag_close:before {
+  content: "\e981";
+  color: #0076e1;
+}
+.ng-cs-tag_info:before {
+  content: "\e982";
+  color: #0076e1;
+}
+.ng-cs-tag:before {
+  content: "\e983";
+  color: #0076e1;
+}
+.ng-cs-thin-arrow-down:before {
+  content: "\e984";
+  color: #0076e1;
+}
+.ng-cs-thin-arrow-left:before {
+  content: "\e985";
+  color: #0076e1;
+}
+.ng-cs-thin-arrow-right:before {
+  content: "\e986";
+  color: #0076e1;
+}
+.ng-cs-thin-arrow-up:before {
+  content: "\e987";
+  color: #0076e1;
+}
+.ng-cs-third-party-tools:before {
+  content: "\e988";
+  color: #0076e1;
+}
+.ng-cs-time:before {
+  content: "\e989";
+  color: #0076e1;
+}
+.ng-cs-toggle-off:before {
+  content: "\e98a";
+  color: #0076e1;
+}
+.ng-cs-toggle-on:before {
+  content: "\e98b";
+  color: #0076e1;
+}
+.ng-cs-top-savings:before {
+  content: "\e98c";
+  color: #0076e1;
+}
+.ng-cs-total-anomaly:before {
+  content: "\e98d";
+  color: #0076e1;
+}
+.ng-cs-total-cost:before {
+  content: "\e98e";
+  color: #0076e1;
+}
+.ng-cs-unpinned:before {
+  content: "\e98f";
+  color: #0076e1;
+}
+.ng-cs-up-arrow:before {
+  content: "\e990";
+  color: #0076e1;
+}
+.ng-cs-view:before {
+  content: "\e991";
+  color: #0076e1;
+}
+.ng-cs-vm-resource-outline:before {
+  content: "\e992";
+  color: #0076e1;
+}
+.ng-cs-vmware:before {
+  content: "\e993";
+  color: #0076e1;
+}
+.ng-cs-warning:before {
+  content: "\e994";
+  color: #0076e1;
+}
+.ng-cs-week-calender:before {
+  content: "\e995";
+  color: #0076e1;
+}
+.ng-cs-well-architected:before {
+  content: "\e996";
+  color: #0076e1;
+}
+

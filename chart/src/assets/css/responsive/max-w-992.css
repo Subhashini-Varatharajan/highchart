@@ -1,0 +1,59 @@
+@media (max-width: 992px) {
+	.control-list li.active a {
+		padding: 8px 14px !important;
+	}
+	.control-list li a {
+		padding: 10px 14px !important;
+		min-width: 230px !important;
+	}
+
+	.control-list li {
+		border-bottom: none !important;
+		padding: 10px 0 !important;
+	}
+
+	.workload-assessment-rules .rule-item {
+		min-height: 100% !important;
+	}
+	.rotated-arrow {
+		transform: rotate(90deg);
+	}
+	.baseline-nav .baseline-item::before {
+		content: "";
+		position: absolute;
+		bottom: 45px;
+		left: 70px;
+		width: 2px;
+		height: 100%;
+		background-color: #c8ceec;
+		z-index: -1;
+		transform: rotate(90deg);
+	}
+	.baseline-nav .baseline-item {
+		width: 100%;
+		min-width: 125px;
+		min-height: 115px !important;
+	}
+
+	/* resource mapping step */
+	.resource-nav .resource-item::before {
+		content: "";
+		position: absolute;
+		bottom: 45px;
+		left: 86px;
+		width: 2px;
+		height: 100%;
+		background-color: #c8ceec;
+		z-index: -1;
+		transform: rotate(90deg);
+	}
+	.resource-nav .resource-item {
+		width: 100%;
+		min-width: 125px;
+		min-height: 115px !important;
+	}
+
+	.discover-dropdown {
+		inset: 0px auto auto 0px !important;
+	}
+}

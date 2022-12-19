@@ -1,0 +1,427 @@
+<!-- Aside Menu -->
+<aside class="d-flex flex-column bg-white top-0 start-0 h-100vh position-fixed overflow-hidden aside-toggle"
+  id="asideMenu" (mouseover)="hoverfcn()" (mouseout)="mout()">
+  <div class="logo px-3 py-4">
+    <a href="javascript:void(0)" class="d-block overflow-hidden ps-1">
+      <img src="../../../assets/img/logo/logo.svg" alt="Logo" />
+    </a>
+  </div> 
+  <ul class="aside-menu h-100 overflow-x-hidden">
+    <li class="py-1">
+      <a onclick="subMenu('governance', this)" href="javascript:void(0)"
+        class="d-flex align-items-center position-relative aside-link aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-governance w-100"></span>
+        </div>
+        <p>Governance</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="governance">
+        <li>
+          <a href="javascript:void(0)">
+            <p>Account Governance</p>
+          </a>
+        </li>
+        <li>
+          <a onclick="superSubMenu('Guardrails', this)" href="javascript:void(0)"
+            class="superSubMenu-link d-flex align-items-center justify-content-between">
+            <p>Guardrails</p>
+            <span class="superSubMenu-indicator"><img src="../../../assets/img/icon/downArrow-gray.svg" alt="" /></span>
+          </a>
+          <ul class="superSubMenuChild overflow-hidden" id="Guardrails">
+            <li>
+              <a href="javascript:void(0)">
+                <p>policies</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1">
+      <a onclick="subMenu('Operations', this)" href="javascript:void(0)"
+        class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-operations w-100"></span>
+        </div>
+        <p>Operations</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="Operations">
+        <li>
+          <a href="javascript:void(0)">
+            <p>Posture</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Anomaly Detector</p>
+          </a>
+        </li>
+        <li>
+          <a onclick="superSubMenu('Guardtrails', this)" href="javascript:void(0)"
+            class="superSubMenu-link d-flex align-items-center justify-content-between">
+            <p>Automation</p>
+            <span class="superSubMenu-indicator"><img src="../../../assets/img/icon/downArrow-gray.svg" alt="" /></span>
+          </a>
+          <ul class="superSubMenuChild overflow-hidden" id="Guardtrails">
+            <li class="active">
+              <a href="javascript:void(0)">
+                <p>Templates</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <p>Scripts</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <p>Blueprints</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Activity</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Monitoring & Alerts</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-security w-100"></span>
+        </div>
+        <p>Security</p>
+      </a>
+    </li>
+    <li class="py-1">
+      <a onclick="subMenu('cost', this)" href="javascript:void(0)"
+        class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-cost w-100"></span>
+        </div>
+        <p>Cost</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="cost">
+        <li>
+          <a href="javascript:void(0)">
+            <p>Posture</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <p>Budget</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Cost Anomaly</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Cost Anomaly</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Markup & Discounts</p>
+          </a>
+        </li>
+        <li>
+          <a onclick="superSubMenu('costOptimizer', this)" href="javascript:void(0)"
+            class="superSubMenu-link d-flex align-items-center justify-content-between">
+            <p>Cost Optimizer</p>
+            <span class="superSubMenu-indicator"><img src="../../../assets/img/icon/downArrow-gray.svg" alt="" /></span>
+          </a>
+          <ul class="superSubMenuChild overflow-hidden" id="costOptimizer">
+            <li>
+              <a href="javascript:void(0)">
+                <p>Posture</p>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <p>Budget</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <p>Cost Anomaly</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1 subMenuActive">
+      <a onclick="subMenu('perspective', this)" href="javascript:void(0)"
+        class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-perspetive w-100"></span>
+        </div>
+        <p>Perspective</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="perspective">
+        <li >
+          <a href="customer-profile.html">
+            <p>Customer Profile</p>
+          </a>
+        </li>
+        <li>
+          <a href="customer-profile.html">
+            <p>Business Hierarchy</p>
+          </a>
+        </li>
+        <li>
+          <a href="resource-mapping/resource-mapping.html">
+            <p>Resource Mapping</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-access w-100"></span>
+        </div>
+        <p>Access</p>
+      </a>
+    </li>
+    <li class="py-1 ">
+      <a onclick="subMenu('resource', this)" href="javascript:void(0)"
+        class="subMenu d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-resource w-100"></span>
+        </div>
+        <p>Resources</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="resource">
+        <li>
+          <a href="javascript:void(0)">
+            <p>Posture</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="active">
+            <p>Workloads</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Inventory</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Business Applications</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Locks</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Tags</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1">
+      <a onclick="subMenu('wellArchitect', this)" href="javascript:void(0)"
+        class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-well-architected w-100"></span>
+        </div>
+        <p>Well Architected</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="wellArchitect">
+        <li>
+          <a href="javascript:void(0)">
+            <p>Frameworks</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Assessment</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-compliance w-100"></span>
+        </div>
+        <p>Compliance</p>
+      </a>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-self-service w-100"></span>
+        </div>
+        <p>Self Service</p>
+      </a>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-recommendations w-100"></span>
+        </div>
+        <p>Recommendations</p>
+      </a>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-reports w-100"></span>
+        </div>
+        <p>Reports</p>
+      </a>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-third-party-tools w-100"></span>
+        </div>
+        <p>Tools & Integrations</p>
+      </a>
+    </li>
+    <li class="py-1">
+      <a onclick="subMenu('settings', this)" href="javascript:void(0)"
+        class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-settings w-100"></span>
+        </div>
+        <p>Settings</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="settings">
+        <li>
+          <a href="javascript:void(0)">
+            <p>Integrated Tools</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Resource Catalog</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Accounts</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Tenants</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Roles</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>User Group</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Users</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Custom Reports</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>CMDB</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="py-1">
+      <a onclick="subMenu('help', this)" href="javascript:void(0)"
+        class="d-flex align-items-center position-relative aside-link">
+        <div class="aside-icon">
+          <span class="ng-cs-help_icon w-100"></span>
+        </div>
+        <p>Help</p>
+      </a>
+      <ul class="subMenuChild overflow-hidden" id="help">
+        <li>
+          <a href="javascript:void(0)">
+            <p>User Guide</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Support</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>FAQ's</p>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <p>Terms & Conditions</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr class="border-solid w-4/5 mx-auto" />
+
+  <ul class="aside-menu aside-action pb-3">
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center aside-link" data-bs-toggle="modal"
+        data-bs-target="#Notifications">
+        <div class="aside-icon tags-wrapper">
+          <span class="ng-cs-notification position-relative w-100">
+            <span
+              class="d-flex align-items-center justify-content-center w-8 h-8 fn12 top-10 end-10 bg-red text-white rounded-circle position-absolute"></span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center aside-link" data-bs-trigger="hover"
+        data-bs-delay="10" data-bs-toggle="tooltip" data-bs-placement="top" title="Message">
+        <div class="aside-icon">
+          <span class="ng-cs-message w-100"></span>
+        </div>
+      </a>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center aside-link" data-bs-trigger="hover"
+        data-bs-delay="10" data-bs-toggle="tooltip" data-bs-placement="top" title="Profile">
+        <div class="aside-icon">
+          <span class="ng-cs-profile-default w-100"></span>
+        </div>
+      </a>
+    </li>
+    <li class="py-1">
+      <a href="javascript:void(0)" class="d-flex align-items-center aside-link" data-bs-trigger="hover"
+        data-bs-delay="10" data-bs-toggle="tooltip" data-bs-placement="top" title="Logout">
+        <div class="aside-icon">
+          <span class="ng-cs-logout w-100"></span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</aside>

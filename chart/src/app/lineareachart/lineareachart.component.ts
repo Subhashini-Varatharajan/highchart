@@ -14,7 +14,7 @@ export class LineareachartComponent {
       type: 'area',
     },
     title: {
-      text: 'Major trophies for some English teams',
+      text: '',
       align: 'left',
     },
     xAxis: {
@@ -23,7 +23,7 @@ export class LineareachartComponent {
     yAxis: {
       min: 0,
       title: {
-        text: 'Count trophies',
+        text: 'Sales',
       },
       stackLabels: {
         enabled: true,
@@ -37,23 +37,21 @@ export class LineareachartComponent {
         },
       },
     },
-    legend: {
-      align: 'left',
-      x: 70,
-      verticalAlign: 'top',
-      y: 70,
-      floating: true,
-    },
+   
     tooltip: {
       headerFormat: '<b>{point.x}</b><br/>',
       pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}',
     },
-    colors:['#0076E1','#EA5F82'],
+    colors:['#0076E1','#EA5F82','#FFA384'],
+    credits:{
+      enabled:false
+     },
     plotOptions: {
       column: {
         stacking: 'normal',
         dataLabels: {
           enabled: true,
+
         },
       },
     },

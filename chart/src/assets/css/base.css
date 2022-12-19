@@ -1,0 +1,359 @@
+/*
+	Table Content
+	1. @import Google Nunito Fonts
+	2. Bootstrap Icon
+	3. Font awesome Icon
+	4. Root
+	5. Default Css
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("responsive/responsive.css");
+
+:root {
+	/* Color Palette */
+	--primary: #0076e1;
+	--dark-primary: #003cff;
+	--primary-white: #e6ecff;
+	--pink-white: #FFE4F2;
+	--green-white: #EBF7F2;
+	--light-blue: #e8f0fe;
+	--night-blue: #383874;
+	--light-green: #d2fbf0;
+	--light-orange: #ffe2cc;
+	--light-purple: #ccd8ff;
+	--light-red: #ffefec;
+	--black: #000000;
+	--white: #ffffff;
+	--light-white: #f9f9f9;
+	--white-gray: #e5e5e5;
+	--light-gray: #e8e8ea;
+	--gray: #a5a3a9;
+	--dark-gray: #7c7c7c;
+	--darker-gray: #77757f;
+	--green: #05bc2d;
+	--red: #ff0000;
+	--yellow: #ff9900;
+	--light-yellow: #e2db56;
+	--dark-red: #c83840;
+	--shade-light-red: #ff2d2e;
+
+	/* tag-governance */
+	--shade-light-orange: #f9f1e8;
+	--ghost-white: #f5f6fb;
+	--extra-dark-gray: #333333;
+	--extra-light-gray: #666666;
+	--extra-light-red: #fceae6;
+	--extra-darker-gray: #474747;
+	--extra-gray: #555555;
+	--mint-green: #29d6c1;
+	--dark-green: #039c24;
+	--light-black: #1d1929;
+	--shade-light-gray: #cccccc;
+	--extra-light-blue: #f7fbff;
+	--dark-orange: #e78510;
+	--extra-dark-red: #f20202;
+	--light-grey: #bdbdbd;
+	--dark-grey: #444444;
+	--darker-green: #449c25;
+	--light-shade-gray: #fafafa;
+	--shade-light-blue: #f1f7ff;
+	--extra-light-shade-gray: rgba(196, 196, 196, 0.06);
+	--light-dodger-blue: #489ae4;
+	--gray2: #888888;
+	--light-gray2: #f8f9ff;
+	--extra-ghost-white: #f0f0f0;
+	--light-ghost-white: #efefef;
+	--shade-light-yellow: #f1e4d5;
+	--extra-light-yellow: rgba(246, 149, 34, 0.05);
+	--light-gray-white: #f5f5f5;
+	--shade-light-green: rgba(3, 156, 36, 0.08);
+	--extra-shade-light-red: rgba(242, 2, 2, 0.05);
+	--extra-light-shade-grey: #e2e2e2;
+	--extra-shade-light-green: rgba(5, 188, 45, 0.05);
+	--light-mint-green: #e3f4e7;
+	--maroon: #d23412;
+	--navy-blue: #38658b;
+	--extra-lighter-red: #f5e4e0;
+	--dark-maroon: #d13413;
+	--shade-lighter-red: #fdf5f3;
+	--mint-gray: #c8ceec;
+	--soft-red: #e47474;
+	--shade-light-white: #fcfdff;
+	--extra-light-shade-blue: #f2f9ff;
+	--grey: #9b9b9b;
+	--creame: #ffe1c5;
+	--light-mint-green: #92d9bb;
+	--sky: #92c5f3;
+
+	/* list-assessment */
+	--extra-mint-gray: #dfe5e9;
+	--dark-grey-shade: #868686;
+	--pink: #e680cd;
+	--purple: #bf80e6;
+	--extra-shade-light-blue: #808ae6;
+	--extra-dark-orange: #f69522;
+	--extra-light-orange: rgba(246, 149, 34, 0.1);
+	--extra-light-gray-white: #f4f4f4;
+	--light-sky-blue: #0f2526;
+	--light-purpule: #d4a3fb;
+	--redish-yellow: #ffce00;
+	--dark-coffee-red: #ffa867;
+
+	/* apm-dashboard flow, cost flow, operation flow */
+	--gray-light: #999999;
+	--dark-pink: #E6147F;
+	--black-color: #172B4D;
+	--color-black: #33325D;
+	--light-gray-light: #EDEDED;
+	--gray-platinum: #e1e4e9;
+
+	/* perspective flow */
+	--extra-dark-pink:#B0005B;
+	--lighter-gray:#959FAE;
+	--lime-green:#36B37E;
+	--extra-light-sky:#EFF7FF;
+ 	--light-golden-yellow:#FDF2BE;
+	--lead-gray:#7C879B;
+	--cyan-blue:#29CAEF;
+	--steel-gray:#E4E7EC;
+
+	/* cloud ops dashboard*/
+	--extra-light-purple:#495974;
+	--white-yellow:#fefae5;
+	
+
+	/* Font Family */
+	--nunito: "Nunito", sans-serif;
+
+	/* Scrollbar */
+	--scrollbarThinkness: 5px;
+
+	/* Aside width */
+	--asideWidth: 76px;
+	--openAsideWidth: 250px;
+
+	/* Shadow */
+	--shadow-md: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* START:Default Css */
+
+* {
+	outline: none !important;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 13px;
+	font-family: var(--nunito);
+	background-color: var(--ghost-white);
+	overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+/* Typography */
+
+h1 {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--extra-darker-gray);
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--extra-darker-gray);
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--dark-gray);
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--extra-dark-gray);
+}
+
+h5 {
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--extra-darker-gray);
+}
+
+p {
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--extra-dark-gray);
+}
+
+span {
+	line-height: 1;
+}
+
+.table-head {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--extra-dark-gray);
+}
+
+.table-records td {
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--dark-gray);
+}
+
+input {
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--extra-dark-gray);
+	padding: 0;
+}
+
+/* Link style */
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+/* List default styles */
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+/* Image default css */
+
+.img-cover {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.img-contain {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+/* Button */
+
+.btn {
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 8px 22px;
+	color: var(--white);
+	border-radius: 14px;
+	text-decoration: none;
+	background-color: var(--primary);
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #0076e1;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+.btn-link {
+	color: var(--primary);
+	background-color: transparent;
+}
+
+.btn-link:hover {
+	color: var(--primary);
+	background-color: transparent;
+}
+
+.btn-border {
+	color: var(--primary);
+	border: 1px solid var(--primary);
+	background-color: transparent;
+}
+
+.btn-border:hover {
+	color: var(--primary);
+	background-color: transparent;
+}
+
+.btn-none {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+/* Table */
+.table> :not(caption)>*>* {
+	padding: 0.6rem 1rem;
+}
+
+/* END:Default Css */
+
+/* Bootstrap Box-shadow Remove */
+.accordion-button:focus,
+textarea:focus,
+button:focus,
+.btn:focus {
+	box-shadow: none !important;
+}
+
+.remove-rounded .dropdown-menu .dropdown-item {
+	border-radius: 0px !important;
+}
+
+.box-padding .accordion-body {
+	padding: 0px !important;
+}
+/* perspective flow progress-bar */
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+	height:20px;
+	max-width:980px;
+	width:100%;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #0d6efd;
+    transition: width .6s ease;
+}

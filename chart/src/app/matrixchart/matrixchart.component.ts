@@ -25,6 +25,9 @@ export class MatrixchartComponent {
     marginBottom: 80,
     plotBorderWidth: 1
   },
+  credits:{
+    enabled:false
+   },
   title: {
     text: 'Heat Map'
   },

@@ -19,6 +19,9 @@ export class LinechartComponent {
          fillOpacity: 0.1 
       }
    },
+   credits:{
+      enabled:false
+     },
      title: {
         text: "Column Chart"
      },

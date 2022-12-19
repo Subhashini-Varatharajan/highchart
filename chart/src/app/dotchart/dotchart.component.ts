@@ -20,7 +20,16 @@ export class DotchartComponent {
         name: 'Cloud Account',
         data: this.ser.data,
         color:'#0076E1' 
-     }]
-  };
-}
+     }],
+     dataSorting:{
+      enabled:true,
+      sortKey:'data.y'
+   
+},
+credits:{
+   enabled:false
+  },
 
+};
+
+}

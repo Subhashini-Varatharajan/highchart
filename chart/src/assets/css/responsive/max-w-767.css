@@ -1,0 +1,54 @@
+@media (max-width: 767px) {
+	body main {
+		margin: 98px 0 70px;
+	}
+
+	/*Assessment Summary*/
+	header .dropdown {
+		margin: 0px 0 0 auto !important;
+	}
+
+	/*Assessment*/
+	.filter-wrapper .bg-light-white {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+
+	/* Create workload */
+	.resource-pagination-wrapper {
+		width: auto !important;
+	}
+
+	/* Create Deployment */
+	.control-list li {
+		border-right: 1px solid #e5e5e5;
+		border-bottom: none !important;
+		padding: 15px 0 !important;
+	}
+
+	.control-list li.active {
+		padding: 0px 18px !important;
+	}
+
+	.control-list li.active a {
+		padding: 7px 15px !important;
+	}
+
+	.control-list li a {
+		padding: 0px 14px !important;
+		min-width: 220px !important;
+	}
+
+	/* .workload-assessment-rules .rule-item .rule-link{
+		width: 280px;
+	} */
+
+	.workload-assessment-rules .rule-item {
+		margin-bottom: 0 !important;
+		min-height: 100% !important;
+	}
+
+	/* tag-governance */
+	
+}

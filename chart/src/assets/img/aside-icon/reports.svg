@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="17.014" viewBox="0 0 15 17.014">
+  <g id="Group_5076" data-name="Group 5076" transform="translate(-6649 7119)">
+    <path id="reports" d="M1.5.5a1,1,0,0,0-1,1v14a1,1,0,0,0,1.447.894L3.5,15.618l1.553.776a1,1,0,0,0,.894,0L7.5,15.618l1.553.776a1,1,0,0,0,.894,0l1.553-.776,1.553.776A1,1,0,0,0,14.5,15.5V1.5a1,1,0,0,0-1-1Z" transform="translate(6649 -7119)" fill="#e6ecff" stroke="#0076e1" stroke-linejoin="round" stroke-width="1"/>
+    <g id="Group_5075" data-name="Group 5075" transform="translate(0.5 1.5)">
+      <line id="Line_53" data-name="Line 53" x2="3" transform="translate(6651.5 -7115.5)" fill="none" stroke="#0076e1" stroke-width="1"/>
+      <line id="Line_56" data-name="Line 56" x2="3" transform="translate(6651.5 -7112.5)" fill="none" stroke="#0076e1" stroke-width="1"/>
+      <line id="Line_54" data-name="Line 54" x2="4.5" transform="translate(6656 -7115.5)" fill="none" stroke="#0076e1" stroke-width="1"/>
+      <line id="Line_55" data-name="Line 55" x2="4.5" transform="translate(6656 -7112.5)" fill="none" stroke="#0076e1" stroke-width="1"/>
+      <line id="Line_57" data-name="Line 57" x2="4.5" transform="translate(6656 -7109.5)" fill="none" stroke="#0076e1" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -13,6 +13,12 @@ import { LineareachartComponent } from './lineareachart/lineareachart.component'
 import { DonotComponent } from './donot/donot.component';
 import { TreechartComponent } from './treechart/treechart.component';
 import { MatrixchartComponent } from './matrixchart/matrixchart.component';
+import { OrgchartComponent } from './orgchart/orgchart.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { NavigationHeadComponent } from './navigation-head/navigation-head.component';
+import { AsideMenuComponent } from './aside-menu/aside-menu.component';
+import { BarchartComponent } from './barchart/barchart.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { MatrixchartComponent } from './matrixchart/matrixchart.component';
     LineareachartComponent,
     DonotComponent,
     TreechartComponent,
-    MatrixchartComponent
+    MatrixchartComponent,
+    OrgchartComponent,
+    DashboardComponent,
+
+    NavigationHeadComponent,
+    AsideMenuComponent,
+    BarchartComponent
   ],
   imports: [
     BrowserModule,

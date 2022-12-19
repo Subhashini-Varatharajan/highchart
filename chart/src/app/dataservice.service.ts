@@ -7,42 +7,64 @@ export class DataserviceService {
 
   constructor() { }
   categories = [
-    'Cloud Account 1',
-    'Cloud Account 2',
-    'Cloud Account 3',
-    'Cloud Account 4',
-    'Cloud Account 5',
-    'Cloud Account 6',
-    'Cloud Account 7',
-    'Cloud Account 8',
+    'AWS',
+    'Azure',
+    'GCP',
+    'OCI',
+    'VMWare'
   ];
-  series = [
-    {
-       name: 'Cloud Account 1',
-       data: [55, 110, 150,220,320]
-    }
-   ];
+  // series = [
+  //   {
+  //      name: 'Cloud Account 1',
+  //      data: [55, 110, 150,220,320]
+  //   }
+  //  ];
    data = [
-    ['AWS',45.0],
-    ['GCP',26.8],
-   ['OCI', 3],
-    ['Azure',8.5],
-    ['VMware',6.2],
+    {
+      name:'AWS',
+      y:50.9,
+      
+    },
+    {
+      name:'Azure',
+      y:30.9
+    },
+    {
+      name:'VMWare',
+      y:23.9
+    },
+    {
+      name:'GCP',
+      y:5.8
+    },
+    {
+      name:'OCI',
+      y:3.9
+    }
+   
     
  ];
  stackeddata =[
  {
   name: 'Cloud Account 1',
   data: [3, 5, 10, 13],
+ 
+  
 },
+
 {
   name: 'Cloud Account2',
   data: [14, 8, 8, 12],
+  
 },
 {
   name: 'Cloud Account 3 ',
   data: [0, 2, 6, 3],
-},];
+ 
+},
+
+
+];
 treedata= [
   {
      name: 'AWS',
@@ -129,5 +151,171 @@ treedata= [
 'OCI',
 'VMWare',
 
-]
+];
+drilldown = [
+          {
+            name: "AWS",
+            id: "AWS",
+            data: [
+              [
+                "Account 1",
+                35
+                
+                     
+              ],
+              [
+                "Account 2",
+                78
+              ],
+              [
+                "Account 3",
+                21
+              ],
+              [
+                "Account 4",
+                63
+              ],
+              [
+                "Account 5",
+                13
+              ],
+             
+              
+            ],
+            dataSorting:{
+              enabled:true
+           }
+          },
+          {
+            name: "Azure",
+            id: "Azure",
+            data: [
+              [
+                "Account 1",
+                12
+              ],
+              [
+                "Account 2",
+                7.36
+              ],
+              [
+                "Account 3",
+                35
+              ],
+              [
+                "Account 4",
+                51
+              ],
+              [
+                "Account 5",
+                83
+              ],
+              [
+                "Account 6",
+                42
+              ],
+              [
+                "Account 7",
+                23
+              ],
+            
+            ],
+            dataSorting:{
+              enabled:true
+           }
+          },
+          {
+            name: "GCP",
+            id: "GCP",
+            data: [
+              [
+               "Account 1",
+                62
+              ],
+              [
+                "Account 2",
+                91
+              ],
+              [
+                "Account 3",
+                49
+              ],
+              [
+                "Account 4",
+                29
+              ],
+              [
+                "Account 5",
+                20
+              ],
+              [
+                "Account 6 ",
+                12
+              ],
+             
+            ],
+            dataSorting:{
+              enabled:true
+           }
+          },
+          {
+            name: "OCI",
+            id: "OCI",
+            data: [
+              [
+                "Account 1",
+                33
+              ],
+              [
+                "Account 2",
+                96
+              ],
+              [
+                "Account 3",
+                66
+              ],
+              [
+                "Account 4",
+                23
+              ],
+             
+             
+            ],
+            dataSorting:{
+              enabled:true
+           }
+          },
+         
+            
+          
+        ];
+        drilldowndata = [
+                    {
+                      name: "AWS",
+                      y: 63.06,
+                      drilldown: "AWS"
+                    },
+                    {
+                      name: "Azure",
+                      y: 19.84,
+                      drilldown: "Azure"
+                    },
+                    {
+                      name: "GCP",
+                      y: 4.18,
+                      drilldown: "GCP"
+                    },
+                    {
+                      name: "OCI",
+                      y: 4.12,
+                      drilldown: "OCI"
+                    },
+                    {
+                      name: "VMWare",
+                      y: 2.33,
+                      drilldown: "VMWare"
+                    },
+                    
+                  ]
+      
 }

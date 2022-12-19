@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import * as HighCharts from 'highcharts'
 import { DataserviceService } from '../dataservice.service';
+import  More from 'highcharts/highcharts-more';
+More(HighCharts);
+import Drilldown from 'highcharts/modules/drilldown';
+Drilldown(HighCharts);
+import Exporting from 'highcharts/modules/exporting';
+Exporting(HighCharts);
 @Component({
   selector: 'app-donot',
   templateUrl: './donot.component.html',
@@ -12,7 +18,8 @@ export class DonotComponent {
   chartOptions :any= {  
   chart : {
     plotBorderWidth: null,
-    plotShadow: false
+    plotShadow: false,
+    type: 'pie',
  },
  title : {
     text: 'Donot Chart'   
@@ -27,6 +34,9 @@ export class DonotComponent {
      allowPointSelect: true,
      cursor: 'pointer',
      innerSize: '50%'  ,
+   
+      depth: 45,
+    
      dataLabels: {
         enabled: false           
      },
@@ -37,8 +47,20 @@ export class DonotComponent {
  series : [{
     type: 'pie',
     name: 'Browser share',
-    data: this.ser.data
- }]
-};
+//     data: this.ser.drilldowndata
+//  }],
+ data: this.ser.drilldowndata,
+}],
+
+drilldown: {
+  series: 
+    
+     this.ser.drilldown
+  
+},
+credits:{
+   enabled:false
+  },
+}
 }
 

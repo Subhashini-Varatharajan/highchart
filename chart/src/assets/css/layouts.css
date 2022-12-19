@@ -1,0 +1,267 @@
+/*
+	Table Content
+	1. Header Css
+	2. Aside css
+	3. After Open aside
+    4. Submenu
+*/
+
+/* Header Css */
+header {
+	transition: all 0.5s;
+	width: calc(100% - var(--asideWidth));
+	box-shadow: 0px 2px 12px rgb(25, 112, 191, 15%);
+	z-index: 99;
+}
+
+header a,
+header span,
+header a:hover,
+header ion-icon {
+	color: var(--primary);
+}
+
+/* Aside css */
+aside {
+	width: var(--asideWidth);
+	transition: all 0.5s;
+	box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08), 0px 4px 48px rgba(0, 0, 0, 0.08);
+	z-index: 99;
+}
+
+.aside-menu .aside-icon {
+	display: flex;
+	width: 42px;
+	height: 42px;
+	min-width: 42px;
+	padding: 0px;
+	margin: 0 17px;
+	border-radius: 13px;
+	align-items: center;
+	transition: all 0.5s;
+	font-size: 38px;
+	/* overflow: hidden; */
+	/* text-align: center; */
+	/* width: calc(var(--asideWidth) - 6px); */
+}
+
+.aside-menu .active .aside-icon {
+	background-color: var(--light-blue);
+}
+
+.aside-menu .subMenuActive .aside-icon {
+	background-color: var(--light-blue);
+}
+
+.aside-menu {
+	overflow-y: hidden;
+}
+.openAside .aside-menu {
+	overflow-y: auto;
+}
+.openAside1 .aside-menu {
+	overflow-y: auto;
+}
+
+.openAside .aside-menu .aside-link:hover,
+.openAside .aside-menu .aside-link.active {
+	background-color: var(--light-blue);
+}
+
+.openAside .subMenuActive .aside-icon {
+	background-color: var(--light-blue);
+}
+.openAside1 .aside-menu .aside-link:hover,
+.openAside1 .aside-menu .aside-link.active {
+	background-color: var(--light-blue);
+}
+
+.openAside1 .subMenuActive .aside-icon {
+	background-color: var(--light-blue);
+}
+/* 
+li.superSubMenu-active{
+	background-color: var(--light-blue);
+} */
+
+li.superSubMenu-active .superSubMenuChild {
+	border-radius: 6px;
+	background-color: var(--light-blue);
+}
+li.superSubMenu-active .superSubMenuChild li.active a p {
+	position: relative;
+	font-weight: 600 !important;
+	color: black !important;
+}
+li.superSubMenu-active .superSubMenuChild li.active a p::before {
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	content: "";
+	transform: translateY(-50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: var(--primary);
+}
+
+li .superSubMenu-link .superSubMenu-indicator {
+	transition: all 0.3s ease;
+}
+
+li.superSubMenu-active .superSubMenu-link p {
+	font-weight: 600 !important;
+	color: black !important;
+}
+li.superSubMenu-active .superSubMenu-link .superSubMenu-indicator {
+	transform: rotate(-180deg);
+}
+/* 
+.openAside .subMenuActive a {
+	background-color: var(--light-blue);
+} */
+
+.openAside .aside-menu .active .aside-icon {
+	background-color: transparent;
+}
+
+.openAside .border-dashed {
+	width: 100%;
+}
+
+body.openAside .aside-action {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+.openAside .aside-menu.aside-action .aside-icon {
+	margin: 0px 0px;
+}
+
+.openAside .aside-menu.aside-action .aside-link {
+	border-radius: 10px;
+}
+.openAside1 .aside-menu .active .aside-icon {
+	background-color: transparent;
+}
+
+.openAside1 .border-dashed {
+	width: 100%;
+}
+
+body.openAside1 .aside-action {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+.openAside1 .aside-menu.aside-action .aside-icon {
+	margin: 0px 0px;
+}
+
+.openAside1 .aside-menu.aside-action .aside-link {
+	border-radius: 10px;
+}
+
+/* .aside-menu p {
+	display: none;
+} */
+
+.aside-menu .aside-link p {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	white-space: nowrap;
+	/* text-align: center; */
+}
+
+/* After Open aside */
+.openAside aside {
+	width: var(--openAsideWidth);
+}
+.openAside1 aside {
+	width: var(--openAsideWidth);
+}
+
+/* .openAside .aside-menu p {
+	display: block;
+} */
+
+.openAside .aside-menu .aside-icon {
+	margin: 0px 12px;
+}
+.openAside1 .aside-menu .aside-icon {
+	margin: 0px 12px;
+}
+
+.aside-menu.aside-action {
+	min-height: 220px;
+}
+
+.openAside .aside-menu.aside-action {
+	min-height: 20px;
+	overflow-y: hidden;
+}
+.openAside1 .aside-menu.aside-action {
+	min-height: 20px;
+	overflow-y: hidden;
+}
+
+/* submenu and supersubmenu */
+.superSubMenuChild {
+	max-height: 0;
+	padding: 0 10px 0 20px;
+	transition: all 0.5s;
+}
+.subMenuChild {
+	max-height: 0;
+	padding: 0 10px 0 49px;
+	transition: all 0.5s;
+}
+
+.subMenuChild.subMenuOpen {
+	max-height: 0px;
+}
+
+.openAside .subMenuChild.subMenuOpen {
+	max-height: 400px;
+}
+
+.openAside .subMenuChild .superSubMenuChild.superSubMenuOpen,
+.superSubMenuChild.superSubMenuOpen,
+.superSubMenuChild {
+	max-height: 0px;
+}
+
+.openAside .subMenuChild.subMenuOpen .superSubMenuChild.superSubMenuOpen {
+	max-height: 400px;
+}
+.openAside1 .subMenuChild.subMenuOpen {
+	max-height: 400px;
+}
+
+.openAside1 .subMenuChild .superSubMenuChild.superSubMenuOpen,
+.superSubMenuChild.superSubMenuOpen,
+.superSubMenuChild {
+	max-height: 0px;
+}
+
+.openAside1 .subMenuChild.subMenuOpen .superSubMenuChild.superSubMenuOpen {
+	max-height: 400px;
+}
+
+.subMenuChild a {
+	padding: 10px 18px;
+	display: block;
+	border-radius: 6px;
+	color: var(--gray);
+	white-space: nowrap;
+}
+
+.subMenuChild a.active,
+.subMenuChild a:hover {
+	background-color: var(--light-blue);
+}
